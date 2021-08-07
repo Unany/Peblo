@@ -1,240 +1,459 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
+
 <head>
-    <title>CoderDocs - Bootstrap 4 Documentation Template For Software Projects</title>
-    
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <meta name="description" content="Bootstrap 4 Template For Software Startups">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
-    <link rel="shortcut icon" href="favicon.ico"> 
-    
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
-    
-    <!-- FontAwesome JS-->
-    <script defer src="assets/fontawesome/js/all.min.js"></script>
-    
-    <!-- Plugins CSS -->
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
-    <link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
+	<title>CoderDocs - Bootstrap 4 Documentation Template For Software Projects</title>
 
-    <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-</head> 
+	<meta name="description" content="Bootstrap 4 Template For Software Startups">
+	<meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+	<link rel="shortcut icon" href="favicon.ico">
 
-<body class="docs-page">    
-    <header class="header fixed-top">	    
-        <div class="branding docs-branding">
-            <div class="container-fluid position-relative py-2">
-                <div class="docs-logo-wrapper">
-					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none" type="button">
-	                    <span></span>
-	                    <span></span>
-	                    <span></span>
-	                </button>
-	                <div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon me-2" src="assets/Icons/Peblo.svg" alt="logo"><span class="logo-text">Peblo</span></a></div>    
-                </div><!--//docs-logo-wrapper-->
-	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
-	                <div class="top-search-box d-none d-lg-flex">
-		                <form class="search-form">
-				            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
-				            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
-				        </form>
-	                </div>
-	
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+
+	<!-- FontAwesome JS-->
+	<script defer src="assets/fontawesome/js/all.min.js"></script>
+
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+	<link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
+
+	<!-- Theme CSS -->
+	<link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+
+</head>
+
+<body class="docs-page">
+	<header class="header fixed-top">
+		<div class="branding docs-branding">
+			<div class="container-fluid position-relative py-2">
+				<div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none"
+						type="button">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon me-2"
+								src="assets/Icons/Peblo.svg" alt="logo"><span class="logo-text">Peblo</span></a></div>
+				</div>
+				<!--//docs-logo-wrapper-->
+				<div class="docs-top-utilities d-flex justify-content-end align-items-center">
+					<div class="top-search-box d-none d-lg-flex">
+						<form class="search-form">
+							<input type="text" placeholder="Search the docs..." name="search"
+								class="form-control search-input">
+							<button type="submit" class="btn search-btn" value="Search"><i
+									class="fas fa-search"></i></button>
+						</form>
+					</div>
+
 					<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
 						<li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li>
-			            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
-		                <li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
-		                <li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
-		            </ul><!--//social-list-->
-		            <a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderdocs-free-bootstrap-5-documentation-template-for-software-projects/" class="btn btn-primary d-none d-lg-flex">Download</a>
-	            </div><!--//docs-top-utilities-->
-            </div><!--//container-->
-        </div><!--//branding-->
-    </header><!--//header-->
-    
-    
-    <div class="docs-wrapper">
-	    <div id="docs-sidebar" class="docs-sidebar">
-		    <div class="top-search-box d-lg-none p-3">
-                <form class="search-form">
-		            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
-		            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
-		        </form>
-            </div>
-		    <nav id="docs-nav" class="docs-nav navbar">
-			    <ul class="section-items list-unstyled nav flex-column pb-3">
-					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-1"><span class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Core Game Play</a></li>
+						<li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
+					</ul>
+					<!--//social-list-->
+					<a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderdocs-free-bootstrap-5-documentation-template-for-software-projects/"
+						class="btn btn-primary d-none d-lg-flex">Download</a>
+				</div>
+				<!--//docs-top-utilities-->
+			</div>
+			<!--//container-->
+		</div>
+		<!--//branding-->
+	</header>
+	<!--//header-->
+
+
+	<div class="docs-wrapper">
+		<div id="docs-sidebar" class="docs-sidebar">
+			<div class="top-search-box d-lg-none p-3">
+				<form class="search-form">
+					<input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+					<button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+				</form>
+			</div>
+			<nav id="docs-nav" class="docs-nav navbar">
+				<ul class="section-items list-unstyled nav flex-column pb-3">
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-1"><span
+								class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Core Game
+							Play</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#item-1-1">Fighting</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#item-1-2">Puzzles</a></li>
-					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Game Flow</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span
+								class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Game Flow</a>
+					</li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">Macroflow</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-2">Microflow</a></li>
-					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Characters</a></li>
-					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Monsters</a></li>
-					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Game Play Elements</a></li>
-					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-6"><span class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Weapon Properties</a></li>
-					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Game Physics & Statistics</a></li>
-					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-8"><span class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Artificial Intelligence</a></li>
-					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-9"><span class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Player Controls</a></li>
-			    </ul>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span
+								class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Characters</a>
+					</li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span
+								class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Monsters</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span
+								class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Game Play
+							Elements</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-6"><span
+								class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Weapon
+							Properties</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span
+								class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Game Physics &
+							Statistics</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-8"><span
+								class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Artificial
+							Intelligence</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-9"><span
+								class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Player
+							Controls</a></li>
+				</ul>
 
-		    </nav><!--//docs-nav-->
-	    </div><!--//docs-sidebar-->
-	    <div class="docs-content">
-		    <div class="container">
+			</nav>
+			<!--//docs-nav-->
+		</div>
+		<!--//docs-sidebar-->
+		<div class="docs-content">
+			<div class="container">
 				<article class="docs-article" id="section-1">
-				    <header class="docs-header">
-					<h1 class="docs-heading">Game Mechanics</h1>
-					<section class="docs-section" id="item-1-0">
-						<h2 class="section-heading">Core Game Play</h2>
-						<p>
-						The core game play in Peblo will be a <b>mix of puzzle solving and fighting monsters</b>,
-						both of which serve your progress in the game.
+					<header class="docs-header">
+						<h1 class="docs-heading">Game Mechanics</h1>
+						<section class="docs-section" id="item-1-0">
+							<h2 class="section-heading">Core Game Play</h2>
+							<p>
+								The core game play in Peblo will be a <b>mix of puzzle solving and fighting
+									monsters</b>,
+								both of which serve your progress in the game.
 						</section>
 						<section class="docs-section" id="item-1-1">
-						<i>Fighting</i> - The fighting in Peblo, will be <b>slow and precise</b>. Rather then button mashing,
-						Peblo should be precise and smart in defeating enemies. This means utilising his <b>surroundings
-						and umbrella</b> in order to destroy the enemies using timing and tactics.
-						<br><br>
-						I want players to pick their fights, rather then be inclined to fight every monsters.
-						<b>They should make a calculated decision, and weigh up whether its worth it. </b>
-						<br><br>
+							<i>Fighting</i> - The fighting in Peblo, will be <b>slow and precise</b>. Rather then button
+							mashing,
+							Peblo should be precise and smart in defeating enemies. This means utilising his
+							<b>surroundings
+								and umbrella</b> in order to destroy the enemies using timing and tactics.
+							<br><br>
+							I want players to pick their fights, rather then be inclined to fight every monsters.
+							<b>They should make a calculated decision, and weigh up whether its worth it. </b>
+							<br><br>
 						</section>
 						<section class="docs-section" id="item-1-2">
-						<i>Puzzles</i> – The Puzzles in Peblo, will be <b>difficult</b>. I want a game which truly causes you to think,
-						kind of like a dark souls of puzzles. Rather then being spoon fed the answer, players should feel
-						very rewarded for coming up with a solution.
-						<br><br>
-						That is why its crucial that every puzzle is solvable from the get go, with a variety of solutions.
-						<br><br>
-						Its crucial to make the world itself a puzzle, the story of the world should be a puzzle in itself.
-						Being solved by the narrative and by the puzzles within the game. <b>Solving the puzzle of the world,
-						will lead you to the end game. Rather then following a sequential pattern</b>.
-						</p>	
+							<i>Puzzles</i> – The Puzzles in Peblo, will be <b>difficult</b>. I want a game which truly
+							causes you to think,
+							kind of like a dark souls of puzzles. Rather then being spoon fed the answer, players should
+							feel
+							very rewarded for coming up with a solution.
+							<br><br>
+							That is why its crucial that every puzzle is solvable from the get go, with a variety of
+							solutions.
+							<br><br>
+							Its crucial to make the world itself a puzzle, the story of the world should be a puzzle in
+							itself.
+							Being solved by the narrative and by the puzzles within the game. <b>Solving the puzzle of
+								the world,
+								will lead you to the end game. Rather then following a sequential pattern</b>.
+							</p>
 						</section>
-						</article>
-						<article class="docs-article" id="section-2">
-						<section class="docs-section" id="item-2-1">
+				</article>
+				<article class="docs-article" id="section-2">
+					<section class="docs-section" id="item-2-1">
 						<h2 class="section-heading">Game Flow</h2>
 						<p>
 							Macroflow:
 							<br><br>
-							The macroflow is a progression of the challenge that adapted to the player’s skills. 
+							The macroflow is a progression of the challenge that adapted to the player’s skills.
 							It is also known and related to the difficulty curve.
 							<br><br>
-							The goal of the macroflow is to maintain the player in the zone between anxiety and boredom. 
+							The goal of the macroflow is to maintain the player in the zone between anxiety and boredom.
 							For a game designer point of view, it means managing;
-							</p>
-							<p>
+						</p>
+						<p>
 							<b>Learning steps of the player</b>
 							<br><br>
-							OKAY
-							</p>
-							<br><br>
-							<p>
+							If the player skills are too high for the challenge, the player may risk falling in a boredom state of mind meaning that the game won't satisfy is needs and they is a big chance that this user will churn and stop playing the game.
+							On the other hand, if the game is too hard, the player may risk falling in an anxiety state of mind meaning and may also churn because he felt that the challenge is too hard for him.
+							The challenge must follow and follow with the player's skills. The evolution of the challenge is tricky, is the primary goal is to maintain the player in the flow zone, between boredom and anxiety. If you succeed to maintain the player in the flow zone, he will not see the time passes, be hooked in your game and live a great experience.
+						
+							PHYSICAL SKILLS
+							We can define the physical skills by the way the player interacts with a game controller or interact with the surface of a phone or a tablet. Those player’s skills are used in action game or arcade style game.
+
+							Measurement - Player must control his action using the amplitude of his movement and the level of pressure on the tumbstick/pad/buttons/stylus
+							Precision - Player must provide an accurate and precise input
+							Reflexes - The player must react to an unpredicatable stimulus and provide appropriate input at the right time
+							Timing - Player must anticipate the right moment to provide an input
+							Endurance - The player must keep doing the same action and must resist to tiredness of doing it.
+							
+							MENTAL SKILLS
+							Mental skills were defined by the one that the player use his brain for the input. Those player’s skills are the most abstracted one and are hard to define and understand by some people.
+							Concentration - The player must retain a sequence of action for a certain amount of time. Keep Focus.
+							Management - The player must be able to organise a limited supply of scarce resources e.g. managing cool down time
+							Memory - Player must memorise and retain important information for a long period of time
+							Observation - Player must oversve an element that is part of the challenge
+							Strategy - Before jumping into action, the player must make a decision based on limited information
+							Tactics - The player must take the right decision and make the right decision by analysing obersvable information.
+							Cleverness - The player must gather information and string together clues to find a solution to a problem
+
+							SOCIAL SKILLS 
+							The social skills are the one that implies any type of social interactions.
+							Leadership - Leader is the player that will make decisions that will affect others
+							Negotiation - Player can negotiate to gain something from someone else
+							Influencers - The must communicate to influence others
+							Helper - The helper will try to help others
+						</p>
+						<br><br>
+						<p>
 							<b>Difficulty progression of the player</b>
 							<br><br>
 							Difficulty of progression, is based on meeting new monsters in the overworld.
-							Learning the methods and skills to beat them. Whilst quite linear, dungeons will have difficulty curves.
-							</p>
-							<br><br>
-							<p>
+							Learning the methods and skills to beat them. Whilst quite linear, dungeons will have
+							difficulty curves.
+						</p>
+						<br><br>
+						<p>
 							<b>The motivation</b>
 							<br><br>
-							OKAY
-							</p>
-							<br><br>
-							<p>
+						<ul>
+						<li><p>
+							<b>Short term:</b>
+							A short term OCR loop should be quick between 0 to 60 seconds for AAA title and the quicker
+							it is for a mobile game the better it will be.
+
+							Objective: Defeat the bokoblins
+							Challenge: Fight the bokoblins using your combat skills
+							Reward: Gain loot and chest reward
+
+							To be clearer, your short term motivation OCR is the core gameplay loop that will become
+							repetitive for your player.
+							You must prototype this loop early during your conception process and massively iterate on
+							it until it becomes frictionless and fun to play.
+							When this is done and you succeed to prove the fun of it than you can move on to the next
+							steps, find a medium term-motivation.
+						</p></li>
+						<li><p>
+							<b>Mid term:</b>
+
+							The midterm retention can also be defined as what will motivate the player to complete the
+							current chapter, level or mission?
+
+							The midterm motivation loop must be clear and understandable by the player during the FTUE.
+							Again, the time will differ depending on
+							wether you work on AAA games or on mobile game. For the AAA games, the player can complete
+							that midterm OCR loop within a 20 minutes timeframe.
+							If you don’t succeed to give to the player a strong understanding and amazing experience of
+							what will make them continue playing the game,
+							there’s a big chance that you will lose that player forever.
+
+							Objective: Reach and activate the tower
+							Challenge: Navigation challenge + climb and or fly mechanic
+							Reward: Acquire quick navigation and detailed map of a new area
+
+							Objective: Defeat the mini boss
+							Challenge: Fight the boss and use you cleverness skills to beat him
+							Reward: Gain unique gears and unique loot
+						</p></li>
+						<li><p>
+							<b>Long term:</b>
+
+							The long term retention is what motivates the player to finish and complete the game. What
+							will make the player stay in the game for 30,
+							60 days? What will make them complete the game? For free to play mobile games, we even talk
+							about years from 1 to 5 years.
+							Consider those aspect early during the design of the game. If you don’t have those features
+							for free to play game, you succeed to
+							retain your super fan and you will skip great user conversion opportunity.
+
+							Objective: Defeat Ganon
+							Challenge: Win an pic fight
+							Reward: Beat the game, reach the end of the story mode
+						</p></li>
+						</ul>
+						<p>
+							There are 2 types of player’s motivation, Extrinsic motivation and intrinsic motivation.
+
+							Extrinsic motivation refers to a behaviour that is driven by external reward. In video game,
+							you can compare it to any type of rewards that the player acquires in the game that will
+							change is a way of playing.
+
+							Extrinsic motivation comes from outside the player. They are generally rewards for a main
+							character in the game.
+
+							Intrinsic motivation is driven by internal rewards. It is a behavior that arises as an
+							individual because it is naturally satisfying you.
+
+							Intrinsic motivation comes from pleasure gets from tasks or activity itself. This motivation
+							also comes from a sense of satisfaction in completing those tasks or activities.
+
+							Personal benefits
+							Pleasure of manipulation
+							Flow
+							Social interaction
+							Recognition
+
+							The BOTW rewards system contained:
+
+							The global ECONOMIC system
+							The COOKING system
+							The Guardians ITEMS
+							The spirits EMBLEM
+							The ancient PORTRAITS
+							The link HOUSE
+							The FAIRY fountain
+							The global ECONOMIC system allowed the player to customize the appeareance of the main
+							character.
+							It allowed the player to get better gears and be more efficient against enemies.
+							It also allowed the player to buy, renovate and decorate their house.
+						</p>
+						<br><br>
+						<p>
 							<b>The pacing of the game and the variety if the game.</b>
 							<br><br>
-							OKAY
-							</p>
-							<br><br>
+							We already set that you must have a strong and fun core gameplay loop. 
+							We also learn that you need a strong rewards system that will reward different type of players to do different type of actions. 
+							If your game already have those 2 aspects, you are already having a strong design.
+						</p>
+						<div class="">
+							<a href="assets/images/huddled.jpeg"><img class="figure-img img-fluid shadow rounded"
+									src="assets/images/player_engagemen.jpg" alt=""
+									title="https://huddled.co.uk/2018/09/why-the-lake-district-is-the-place-to-visit-this-autumn/" /></a>
+						</div>
+						<br><br>
+						<div class="alert alert-dark" role="alert">
+							This is a dark alert—check it out!
+						</div>
+						<div class="">
+							<a href="assets/images/huddled.jpeg"><img class="figure-img img-fluid shadow rounded"
+									src="assets/images/player_type_engagement_chart.jpg" alt=""
+									title="https://huddled.co.uk/2018/09/why-the-lake-district-is-the-place-to-visit-this-autumn/" /></a>
+						</div>
+						<!--//col-->
+						<div class="alert alert-dark" role="alert">
+							This is a dark alert—check it out!
+						</div>
+						<br><br>
 						<ul>
-						    <li><class="me-1">Enemies:<code>&lt;div id="foo"&gt;</code></li>
-						    <li><class="me-1">A puzzle or puzzles: <code>#foo { color: red }</code></li>
-						    <li><class="me-1">Multiple narrative sections, with one or two intense plot progression scenes:<code>console.log(&#x27;#foo\bar&#x27;);</code></li>
+							<li>
+								<class="me-1">Enemies:<code>&lt;div id="foo"&gt;</code>
+							</li>
+							<li>
+								<class="me-1">A puzzle or puzzles: <code>#foo { color: red }</code>
+							</li>
+							<li>
+								<class="me-1">Multiple narrative sections, with one or two intense plot progression
+									scenes:<code>console.log(&#x27;#foo\bar&#x27;);</code>
+							</li>
 						</ul>
-						</section>
-						<section class="docs-section" id="item-2-2">
-						<p>	
+					</section>
+					<section class="docs-section" id="item-2-2">
+						<p>
 							Microflow:
 							<br><br>
-							The microflow is emotionally intense. It is an experience that lasts for a short period of time but can repeat over time. 
-							If your gameplay loop doesn’t contain microflow element, there’s a big chance that your game will fail to get engage users.
+							The microflow is emotionally intense. It is an experience that lasts for a short period of
+							time but can repeat over time.
+							If your gameplay loop doesn’t contain microflow element, there’s a big chance that your game
+							will fail to get engage users.
 							<br><br>
 							HOW TO BUILD THE MICROFLOW
 
-							There are 3 important means that you can integrate into your game design to help you create the 
+							There are 3 important means that you can integrate into your game design to help you create
+							the
 							microflow for your game.
 
 							Gameplay rythm
 							The virtuous circle effect
 							Positive feedbacks and rewards
 
-							Design the player inputs combination as a rythmic pattern is part of work to create the microflow. 
-							If there is no real define pattern in the player input experience, it will be harder for your game 
+							Design the player inputs combination as a rythmic pattern is part of work to create the
+							microflow.
+							If there is no real define pattern in the player input experience, it will be harder for
+							your game
 							to create the microflow effect for the player.
 
-							This mechanic will help the player to be and to stay in the microflow. 
-							As long as the player succeeds and stays in the flow, the challenge will become easier and stays easier.
+							This mechanic will help the player to be and to stay in the microflow.
+							As long as the player succeeds and stays in the flow, the challenge will become easier and
+							stays easier.
 							POSITIVE FEEDBACKS AND REWARDS
 
-							The more the player succeeds in doing a specific action, the more the game should give him positive 
-							feedbacks to help to maintain him in the flow. In Candy Crush, the sugar crush sequence gives many 
-							rewards and chaining success based on the player performance. The more the player succeed to complete 
-							the puzzle in less move will make the sugar crush sequence more and more rewarding. Even so, if the level 
-							is complete, the game maintains the player in the microflow and keep him still wanting to play.
+							The more the player succeeds in doing a specific action, the more the game should give him
+							positive
+							feedbacks to help to maintain him in the flow. In Candy Crush, the sugar crush sequence
+							gives many
+							rewards and chaining success based on the player performance. The more the player succeed to
+							complete
+							the puzzle in less move will make the sugar crush sequence more and more rewarding. Even so,
+							if the level
+							is complete, the game maintains the player in the microflow and keep him still wanting to
+							play.
 							<br><br>
-							Once the dungeon is over, the same basic sequence will happen, filling in a lot of the story of the area
-							and giving the player a reason to continue their progression in the game (aka new item). Scaterred between the usual
-							game flow conventions will be special "Set pieces", which will act as a buffer between two locations.							
-						</p>		
-						</section>
-						</article>
-						<article class="docs-article" id="section-3">
-						<section class="docs-section" id="item-3-3">
-						<h2 class="section-heading">Characters</h2>	
-						<p>
-						Peblo is a cultivation of year's worth of imagining.
-						I wanted a character that grew along with whatever story the game had.
-						He had to be hollow to start with, emotionless, talentless and realise his potential through tasks.
-						<br><br>
-						Peblo is the embodiment of that, a clay doll brought to life. 
-						<br><br>
-						Below are some iterations of Peblo, made in adobe illustrator.
+							Once the dungeon is over, the same basic sequence will happen, filling in a lot of the story
+							of the area
+							and giving the player a reason to continue their progression in the game (aka new item).
+							Scaterred between the usual
+							game flow conventions will be special "Set pieces", which will act as a buffer between two
+							locations.
 						</p>
-						<br>	
+					</section>
+				</article>
+				<article class="docs-article" id="section-3">
+					<section class="docs-section" id="item-3-3">
+						<h2 class="section-heading">Characters</h2>
+						<p>
+							Peblo is a cultivation of year's worth of imagining.
+							I wanted a character that grew along with whatever story the game had.
+							He had to be hollow to start with, emotionless, talentless and realise his potential through
+							tasks.
+							<br><br>
+							Peblo is the embodiment of that, a clay doll brought to life.
+							<br><br>
+							Below are some iterations of Peblo, made in adobe illustrator.
+						</p>
+						<br>
 						<div class="simplelightbox-gallery row mb-3">
 							<div class="col-12 col-md-4 mb-3">
-						        <a href="assets/images/miyazaki-tk-900x450.jpeg"><img class="figure-img img-fluid shadow rounded" style='height: 70%; width: 70%; object-fit: contain' src="assets/images/First Peblo.png" alt="" title="https://www.lakedistrict.gov.uk/the-blog/latest-in-the-lake-district"/></a>
+								<a href="assets/images/miyazaki-tk-900x450.jpeg"><img
+										class="figure-img img-fluid shadow rounded"
+										style='height: 70%; width: 70%; object-fit: contain'
+										src="assets/images/First Peblo.png" alt=""
+										title="https://www.lakedistrict.gov.uk/the-blog/latest-in-the-lake-district" /></a>
 							</div>
 							<div class="col-12 col-md-4 mb-3">
-						        <a href="assets/images/Spirited_Realm_-_(1).jpeg"><img class="figure-img img-fluid shadow rounded" style='height: 70%; width: 70%; object-fit: contain' src="assets/images/Peblo Two.png" alt="" title="https://www.herdwickcroft.co.uk/10-reasons-to-visit-the-lake-district-in-autumn/"/></a>
-							</div><!--//col-->
+								<a href="assets/images/Spirited_Realm_-_(1).jpeg"><img
+										class="figure-img img-fluid shadow rounded"
+										style='height: 70%; width: 70%; object-fit: contain'
+										src="assets/images/Peblo Two.png" alt=""
+										title="https://www.herdwickcroft.co.uk/10-reasons-to-visit-the-lake-district-in-autumn/" /></a>
+							</div>
+							<!--//col-->
 							<div class="col-12 col-md-4 mb-3">
-						        <a href="assets/images/download (1).jpeg"><img class="figure-img img-fluid shadow rounded" style='height: 70%; width: 70%; object-fit: contain' src="assets/images/Peblo Four.png" alt="" title="https://huddled.co.uk/2018/09/why-the-lake-district-is-the-place-to-visit-this-autumn/"/></a>
-							</div><!--//col-->
-						</div><!--//gallery-->
+								<a href="assets/images/download (1).jpeg"><img
+										class="figure-img img-fluid shadow rounded"
+										style='height: 70%; width: 70%; object-fit: contain'
+										src="assets/images/Peblo Four.png" alt=""
+										title="https://huddled.co.uk/2018/09/why-the-lake-district-is-the-place-to-visit-this-autumn/" /></a>
+							</div>
+							<!--//col-->
+						</div>
+						<!--//gallery-->
 						<br>
 						<div class="container">
 							<div class="row">
 								<div class="col-sm">
-								<p>
-								Test Test Test Test Test
-								</p>
+									<p>
+										Test Test Test Test Test
+									</p>
 								</div>
 								<div class="col-sm">
-								<div class="">
-										<a href="assets/images/huddled.jpeg"><img class="figure-img img-fluid shadow rounded" style='height: 50%; width: 50%; object-fit: contain' src="assets/images/Peblo Final.png" alt="" title="https://huddled.co.uk/2018/09/why-the-lake-district-is-the-place-to-visit-this-autumn/"/></a>
-								</div><!--//col-->
+									<div class="">
+										<a href="assets/images/huddled.jpeg"><img
+												class="figure-img img-fluid shadow rounded"
+												style='height: 50%; width: 50%; object-fit: contain'
+												src="assets/images/Peblo Final.png" alt=""
+												title="https://huddled.co.uk/2018/09/why-the-lake-district-is-the-place-to-visit-this-autumn/" /></a>
+									</div>
+									<!--//col-->
 								</div>
 							</div>
 						</div>
@@ -243,160 +462,176 @@
 							<div class="row">
 								<div class="col">
 									<p>
-									In order to give a character life, I like to model it out of clay.
-									It gives me perspective, allows me to feel like Peblo's real.
-									<br><br>
-									Below is Peblo, in his 3D clay glory!
+										In order to give a character life, I like to model it out of clay.
+										It gives me perspective, allows me to feel like Peblo's real.
+										<br><br>
+										Below is Peblo, in his 3D clay glory!
 									</p>
 								</div>
 								<div class="col-8">
 									<div class="">
-									<center>
-											<a href="assets/images/huddled.jpeg"><img class="figure-img img-fluid shadow rounded" style='height: 50%; width: 50%; object-fit: contain' src="assets/images/Peblo_Clay.jpg" alt="" title="https://huddled.co.uk/2018/09/why-the-lake-district-is-the-place-to-visit-this-autumn/"/></a>
-									</center>
-									</div><!--//col-->
+										<center>
+											<a href="assets/images/huddled.jpeg"><img
+													class="figure-img img-fluid shadow rounded"
+													style='height: 50%; width: 50%; object-fit: contain'
+													src="assets/images/Peblo_Clay.jpg" alt=""
+													title="https://huddled.co.uk/2018/09/why-the-lake-district-is-the-place-to-visit-this-autumn/" /></a>
+										</center>
+									</div>
+									<!--//col-->
 								</div>
 							</div>
 						</div>
-						</section>
-						</article>
-						<article class="docs-article" id="section-4">
-						<section class="docs-section" id="item-3-4">
+					</section>
+				</article>
+				<article class="docs-article" id="section-4">
+					<section class="docs-section" id="item-3-4">
 						<h2 class="section-heading">Monsters</h2>
 						<p>
-						The tables below dictate how many hits/shots it takes to vanquish each monster. “X”
-						means no damage can be dealt. “!” means the weapon cannot reach the enemy. “0” means the
-						weapon is introduced later than the monster still remains in the game.
+							The tables below dictate how many hits/shots it takes to vanquish each monster. “X”
+							means no damage can be dealt. “!” means the weapon cannot reach the enemy. “0” means the
+							weapon is introduced later than the monster still remains in the game.
 						</p>
-						<table class="center" >
-						  <tr>
-						    <th>Enemy</th>
-						    <th>Lastname</th>
-						    <th>Age</th>
-						  </tr>
-						  <tr>
-						    <td>Jill</td>
-						    <td>Smith</td>
-						    <td>50</td>
-						  </tr>
-						  <tr>
-						    <td>Eve</td>
-						    <td>Jackson</td>
-						    <td>94</td>
-						  </tr>
-						  <tr>
-						    <td>John</td>
-						    <td>Doe</td>
-						    <td>80</td>
-						  </tr>
+						<table class="center">
+							<tr>
+								<th>Enemy</th>
+								<th>Lastname</th>
+								<th>Age</th>
+							</tr>
+							<tr>
+								<td>Jill</td>
+								<td>Smith</td>
+								<td>50</td>
+							</tr>
+							<tr>
+								<td>Eve</td>
+								<td>Jackson</td>
+								<td>94</td>
+							</tr>
+							<tr>
+								<td>John</td>
+								<td>Doe</td>
+								<td>80</td>
+							</tr>
 						</table>
 						<p>
-						1. Console keys
-						2. What will make the game easy for learners
-						</p>		
-						</section>
-						</article>
-						<article class="docs-article" id="section-5">
-						<section class="docs-section" id="item-3-5">
+							1. Console keys
+							2. What will make the game easy for learners
+						</p>
+					</section>
+				</article>
+				<article class="docs-article" id="section-5">
+					<section class="docs-section" id="item-3-5">
 						<h2 class="section-heading">Game Play Elements</h2>
 						<p>
-						Flashlight & radio
-						<br><br>
-						The flashlight helps James see in the dark, helping him to see important items and
-						monsters. Equally having the flashlight on makes James easier to be spotted by danger. The
-						radio helps James detect nearby enemies, emitting a loud static when danger is nearby. Like the
-						flashlight, the radio can also draw attention to James. The radio does not work for normal
-						transmissions.
-						1. Console keys
-						2. What will make the game easy for learners
+							Flashlight & radio
+							<br><br>
+							The flashlight helps James see in the dark, helping him to see important items and
+							monsters. Equally having the flashlight on makes James easier to be spotted by danger. The
+							radio helps James detect nearby enemies, emitting a loud static when danger is nearby. Like
+							the
+							flashlight, the radio can also draw attention to James. The radio does not work for normal
+							transmissions.
+							1. Console keys
+							2. What will make the game easy for learners
 						</p>
 						<p>
 							Umbrella
 							<br><br>
-							The umbrella is a multi-purpose tool in Peblo. It can help him fight enemies, reflect projectiles, float, fly and pole vault.
-							
-						</p>	
+							The umbrella is a multi-purpose tool in Peblo. It can help him fight enemies, reflect
+							projectiles, float, fly and pole vault.
+
+						</p>
 						<p>
 							World Seed
 							<br><br>
 							The world seed is a tool to help guide the player in the game, it acts as a spiritual guide.
-							The player doesn't know what it does, except for the fact it grows bigger whilst reaching certain points in the story.
+							The player doesn't know what it does, except for the fact it grows bigger whilst reaching
+							certain points in the story.
 							<br><br>
-							In actual fact its peblo's fate to become a sacrifical pawn for fate, and the world seed is just a tool at play.
-						</p>			
-						</section>
-						</article>
-						<article class="docs-article" id="section-6">
-						<section class="docs-section" id="item-3-6">
+							In actual fact its peblo's fate to become a sacrifical pawn for fate, and the world seed is
+							just a tool at play.
+						</p>
+					</section>
+				</article>
+				<article class="docs-article" id="section-6">
+					<section class="docs-section" id="item-3-6">
 						<h2 class="section-heading">Weapon Properties</h2>
 						<p>
-						Blunt and Special Weapons
+							Blunt and Special Weapons
 						</p>
-						<table class="center" >
-						  <tr>
-						    <th>Firstname</th>
-						    <th>Lastname</th>
-						    <th>Age</th>
-						  </tr>
-						  <tr>
-						    <td>Jill</td>
-						    <td>Smith</td>
-						    <td>50</td>
-						  </tr>
-						  <tr>
-						    <td>Eve</td>
-						    <td>Jackson</td>
-						    <td>94</td>
-						  </tr>
-						  <tr>
-						    <td>John</td>
-						    <td>Doe</td>
-						    <td>80</td>
-						  </tr>
+						<table class="center">
+							<tr>
+								<th>Firstname</th>
+								<th>Lastname</th>
+								<th>Age</th>
+							</tr>
+							<tr>
+								<td>Jill</td>
+								<td>Smith</td>
+								<td>50</td>
+							</tr>
+							<tr>
+								<td>Eve</td>
+								<td>Jackson</td>
+								<td>94</td>
+							</tr>
+							<tr>
+								<td>John</td>
+								<td>Doe</td>
+								<td>80</td>
+							</tr>
 						</table>
 						<p>
-						1. Console keys
-						2. What will make the game easy for learners
-						</p>		
-						</section>
-						</article>
-						<article class="docs-article" id="section-7">
-						<section class="docs-section" id="item-3-7">
+							1. Console keys
+							2. What will make the game easy for learners
+						</p>
+					</section>
+				</article>
+				<article class="docs-article" id="section-7">
+					<section class="docs-section" id="item-3-7">
 						<h2 class="section-heading">Game Physics & Statistics</h2>
 						<p>
 							This is the most important section for Peblo. Peblo's core gameplay loop, relys on
-							physics to make a dynamic and changing world. 
+							physics to make a dynamic and changing world.
 							<br><br>
 							Movement:
 							<br><br>
-							Peblo has 2 speeds, crouching and running. As peblo grows to become more whole, he gains new abilities. Crouching being one of them.
-							Stamina will not play an effect in Peblo. I wan't the players to instead choose their movement type based on the surrounding areas. For example
-							crouching for when hiding from a monster. True movement will be caused by using the umbrella.
+							Peblo has 2 speeds, crouching and running. As peblo grows to become more whole, he gains new
+							abilities. Crouching being one of them.
+							Stamina will not play an effect in Peblo. I wan't the players to instead choose their
+							movement type based on the surrounding areas. For example
+							crouching for when hiding from a monster. True movement will be caused by using the
+							umbrella.
 							<br><br>
 							Flying:
 							<br><br>
-							Peblo can use his umbrella to fly. Because of his weight, Peblo drops quickly meaning prolonged gliding isnt available to the player. They must instead, determine the
+							Peblo can use his umbrella to fly. Because of his weight, Peblo drops quickly meaning
+							prolonged gliding isnt available to the player. They must instead, determine the
 							best angle to fly to e.g. a cliff edge
 							<br><br>
 							Swimming:
 							<br><br>
-							Whilst peblo cannot swim because he's to heavy. He can float using the umbrella as a boat. Peblo is unable to steer the umbrella until
+							Whilst peblo cannot swim because he's to heavy. He can float using the umbrella as a boat.
+							Peblo is unable to steer the umbrella until
 							he acquires a special item in the mid game.
 							<br><br>
 							Combat:
 							<br><br>
-							The rate of combat depends on the method the player wishes to use to kill an enemy (if possible).
+							The rate of combat depends on the method the player wishes to use to kill an enemy (if
+							possible).
 							Players can choose; environmental, fighting or running away.
 							<br><br>
-							In order to deal damage faster, the player should understand the attack pattern of the enemy, what it'
+							In order to deal damage faster, the player should understand the attack pattern of the
+							enemy, what it'
 							weaknesses are.
 							<br><br>
 							When Peblo gets hit theres a brief period of invincilbity to allow the plaeyr to react.
-						</p>		
-						</section>
-						</article>
-						<article class="docs-article" id="section-8">
-						<section class="docs-section" id="item-3-8">
+						</p>
+					</section>
+				</article>
+				<article class="docs-article" id="section-8">
+					<section class="docs-section" id="item-3-8">
 						<h2 class="section-heading">Artificial Intelligence</h2>
 						<p>
 							Enemies will react based on these two basic senses, sight and sound.
@@ -407,19 +642,23 @@
 							Sound - enemies can hear sound. Peblo can limit his sound by reducing movement or crouching.
 							This can help in stealth like kills.
 						</p>
-						</section>
-						</article>
-						<article class="docs-article" id="section-9">
-						<section class="docs-section" id="item-3-9">
+					</section>
+				</article>
+				<article class="docs-article" id="section-9">
+					<section class="docs-section" id="item-3-9">
 						<h2 class="section-heading">Player Controls</h2>
 						<div class="">
-						        <a href="assets/images/huddled.jpeg"><img class="figure-img img-fluid shadow rounded" src="assets/images/PlayerControls.png" alt="" title="https://huddled.co.uk/2018/09/why-the-lake-district-is-the-place-to-visit-this-autumn/"/></a>
-						</div><!--//col-->		
-						</section>
-						</article>
-			    <footer class="footer">
+							<a href="assets/images/huddled.jpeg"><img class="figure-img img-fluid shadow rounded"
+									src="assets/images/PlayerControls.png" alt=""
+									title="https://huddled.co.uk/2018/09/why-the-lake-district-is-the-place-to-visit-this-autumn/" /></a>
+						</div>
+						<!--//col-->
+					</section>
+				</article>
+				<footer class="footer">
 					<div class="progress my-4">
-						<div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+						<div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30"
+							aria-valuemin="0" aria-valuemax="100"></div>
 					</div>
 					<ul class="pagination pagination-lg justify-content-center">
 						<li class="page-item"><a class="page-link" href="gameconcept.html#section-1">Previous</a></li>
@@ -435,36 +674,39 @@
 						<li class="page-item"><a class="page-link" href="bibliography.html#section-1">10</a></li>
 						<li class="page-item"><a class="page-link" href="interface.html#section-1">Next</a></li>
 					</ul>
-				    <div class="container text-center py-5">
-				        <small class="copyright">Template Copyright &copy; <a href="https://themes.3rdwavemedia.com/" target="_blank">3rd Wave Media</a></small>
-				        <ul class="social-list list-unstyled pt-4 mb-0">
-						    <li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li> 
-				            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
-				            <li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
-				            <li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
-				            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li>
-				            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li>
-				        </ul><!--//social-list-->
-				    </div>
-			    </footer>
-		    </div> 
-	    </div>
-    </div><!--//docs-wrapper-->
-   
-       
-    <!-- Javascript -->          
-    <script src="assets/plugins/popper.min.js"></script>
-    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
-    
-    
-    <!-- Page Specific JS -->
-    <script src="assets/plugins/smoothscroll.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
-    <script src="assets/js/highlight-custom.js"></script> 
-    <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>      
-    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script> 
-    <script src="assets/js/docs.js"></script> 
+					<div class="container text-center py-5">
+						<small class="copyright">Template Copyright &copy; <a href="https://themes.3rdwavemedia.com/"
+								target="_blank">3rd Wave Media</a></small>
+						<ul class="social-list list-unstyled pt-4 mb-0">
+							<li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li>
+						</ul>
+						<!--//social-list-->
+					</div>
+				</footer>
+			</div>
+		</div>
+	</div>
+	<!--//docs-wrapper-->
+
+
+	<!-- Javascript -->
+	<script src="assets/plugins/popper.min.js"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+
+	<!-- Page Specific JS -->
+	<script src="assets/plugins/smoothscroll.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+	<script src="assets/js/highlight-custom.js"></script>
+	<script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
+	<script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
+	<script src="assets/js/docs.js"></script>
 
 </body>
-</html> 
 
+</html>
