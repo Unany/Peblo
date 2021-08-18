@@ -1,201 +1,291 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
+
 <head>
-    <title>CoderDocs - Bootstrap 4 Documentation Template For Software Projects</title>
-    
-    <!-- Meta -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <meta name="description" content="Bootstrap 4 Template For Software Startups">
-    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
-    <link rel="shortcut icon" href="favicon.ico"> 
-    
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
-    
-    <!-- FontAwesome JS-->
-    <script defer src="assets/fontawesome/js/all.min.js"></script>
-    
-    <!-- Plugins CSS -->
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
-    <link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
+	<title>CoderDocs - Bootstrap 4 Documentation Template For Software Projects</title>
 
-    <!-- Theme CSS -->  
-    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-</head> 
+	<meta name="description" content="Bootstrap 4 Template For Software Startups">
+	<meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+	<link rel="shortcut icon" href="favicon.ico">
 
-<body class="docs-page">    
-    <header class="header fixed-top">	    
-        <div class="branding docs-branding">
-            <div class="container-fluid position-relative py-2">
-                <div class="docs-logo-wrapper">
-					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none" type="button">
-	                    <span></span>
-	                    <span></span>
-	                    <span></span>
-	                </button>
-	                <div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon me-2" src="assets/Icons/Peblo.svg" alt="logo"><span class="logo-text">Peblo</span></a></div>    
-                </div><!--//docs-logo-wrapper-->
-	            <div class="docs-top-utilities d-flex justify-content-end align-items-center">
-	                <div class="top-search-box d-none d-lg-flex">
-		                <form class="search-form">
-				            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
-				            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
-				        </form>
-	                </div>
-	
+	<!-- Google Font -->
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+
+	<!-- FontAwesome JS-->
+	<script defer src="assets/fontawesome/js/all.min.js"></script>
+
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.2/styles/atom-one-dark.min.css">
+	<link rel="stylesheet" href="assets/plugins/simplelightbox/simple-lightbox.min.css">
+
+	<!-- Theme CSS -->
+	<link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
+
+</head>
+
+<body class="docs-page">
+	<header class="header fixed-top">
+		<div class="branding docs-branding">
+			<div class="container-fluid position-relative py-2">
+				<div class="docs-logo-wrapper">
+					<button id="docs-sidebar-toggler" class="docs-sidebar-toggler docs-sidebar-visible me-2 d-xl-none"
+						type="button">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<div class="site-logo"><a class="navbar-brand" href="index.html"><img class="logo-icon me-2"
+								src="assets/Icons/Peblo.svg" alt="logo"><span class="logo-text">Peblo</span></a></div>
+				</div>
+				<!--//docs-logo-wrapper-->
+				<div class="docs-top-utilities d-flex justify-content-end align-items-center">
+					<div class="top-search-box d-none d-lg-flex">
+						<form class="search-form">
+							<input type="text" placeholder="Search the docs..." name="search"
+								class="form-control search-input">
+							<button type="submit" class="btn search-btn" value="Search"><i
+									class="fas fa-search"></i></button>
+						</form>
+					</div>
+
 					<ul class="social-list list-inline mx-md-3 mx-lg-5 mb-0 d-none d-lg-flex">
 						<li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li>
-			            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
-		                <li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
-		                <li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
-		            </ul><!--//social-list-->
-		            <a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderdocs-free-bootstrap-5-documentation-template-for-software-projects/" class="btn btn-primary d-none d-lg-flex">Download</a>
-	            </div><!--//docs-top-utilities-->
-            </div><!--//container-->
-        </div><!--//branding-->
-    </header><!--//header-->
-    
-    
-    <div class="docs-wrapper">
-	    <div id="docs-sidebar" class="docs-sidebar">
-		    <div class="top-search-box d-lg-none p-3">
-                <form class="search-form">
-		            <input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
-		            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
-		        </form>
-            </div>
-		    <nav id="docs-nav" class="docs-nav navbar">
-			    <ul class="section-items list-unstyled nav flex-column pb-3">
-					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-1"><span class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Elevator Pitch</a></li>
-					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Background</a></li>
-					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Description</a></li>
-					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Key Features</a></li>
-					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Genre</a></li>
-					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-6"><span class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Platform</a></li>
-					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Concept Art</a></li>	
-			    </ul>
+						<li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
+					</ul>
+					<!--//social-list-->
+					<a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/coderdocs-free-bootstrap-5-documentation-template-for-software-projects/"
+						class="btn btn-primary d-none d-lg-flex">Download</a>
+				</div>
+				<!--//docs-top-utilities-->
+			</div>
+			<!--//container-->
+		</div>
+		<!--//branding-->
+	</header>
+	<!--//header-->
 
-		    </nav><!--//docs-nav-->
-	    </div><!--//docs-sidebar-->
-	    <div class="docs-content">
-		    <div class="container">
-			    <article class="docs-article" id="section-1">
-				    <header class="docs-header">
-					<h1 class="docs-heading">Game Concept</h1>
-					<section class="docs-section" id="item-2-1">
-						<h2 class="section-heading">Elevator Pitch</h2>
-						<p>
-						<i>If you could fight fate? Would you?</i>
-						<br><br>
-						Unravel the strings of fate in this Top-Down action-adventure game where every decision could change the future
-						
-						</p>
-					</section><!--//section-->
+
+	<div class="docs-wrapper">
+		<div id="docs-sidebar" class="docs-sidebar">
+			<div class="top-search-box d-lg-none p-3">
+				<form class="search-form">
+					<input type="text" placeholder="Search the docs..." name="search" class="form-control search-input">
+					<button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+				</form>
+			</div>
+			<nav id="docs-nav" class="docs-nav navbar">
+				<ul class="section-items list-unstyled nav flex-column pb-3">
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-1"><span
+								class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Elevator
+							Pitch</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span
+								class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Background</a>
+					</li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span
+								class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Description</a>
+					</li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span
+								class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Key Features</a>
+					</li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span
+								class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Genre</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-6"><span
+								class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Platform</a></li>
+					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-7"><span
+								class="theme-icon-holder me-2"><i class="fas fa-arrow-down"></i></span>Concept Art</a>
+					</li>
+				</ul>
+
+			</nav>
+			<!--//docs-nav-->
+		</div>
+		<!--//docs-sidebar-->
+		<div class="docs-content">
+			<div class="container">
+				<article class="docs-article" id="section-1">
+					<header class="docs-header">
+						<h1 class="docs-heading">Game Concept</h1>
+						<section class="docs-section" id="item-2-1">
+							<div class="simplelightbox-gallery row">
+								<div class="col">
+									<h2 class="section-heading">Elevator Pitch</h2>
+									<p>
+										<i>If you could fight fate? Would you?</i>
+										<br><br>
+										<b>Unravel the strings of fate in this Top-Down action-adventure game where
+											every
+											decision could change the future or will it?</b>
+									</p>
+								</div>
+								<div class="col">
+									<a href="assets/images/miyazaki-tk-900x450.jpeg"><img
+											class="figure-img img-fluid"
+											style='height: 70%; width: 70%; object-fit: contain'
+											src="assets/images/legendofzeldalogo.png" alt=""
+											title="https://www.lakedistrict.gov.uk/the-blog/latest-in-the-lake-district" /></a>
+								</div>
+								<!--//col-->
+							</div>
+						</section>
+						<!--//section-->
 				</article>
 				<article class="docs-article" id="section-2">
 					<section class="docs-section" id="item-2-2">
 						<h2 class="section-heading">Background</h2>
 						<p>
-						Peblo will aim to be a franchise, exploring the relationship between Ei and Peblo and what fate has in store for them.
-						The game will be built using <b>Unity and its scriptable rendering pipeline 'URP'</b>.
-						<br><br>
-						As it's a new game, with a lot of technical methods to implement, in order to minimise risk
-						the <b>Top-down engine asset by More Mountains</b> is being used as the core in the project.
-						Having been developed for years, with good documentation - it is the perfect based to start developing a top-down game.
-						I will then add additional fucntionality on top of it using custom scripts. 
-						<br><br>
-						A lot of the core concepts need to be carefully analysed so it doesn't look like a legend of zelda clone. 
-						This is crucial in order for Peblo to stand out in the market.
-					</section><!--//section-->
+							Peblo will aim to be a franchise, exploring the relationship between Ei and Peblo and what
+							fate has in store for them.
+							The game will be built using <b>Unity and its scriptable rendering pipeline 'URP'</b>.
+							<br><br>
+							As it's a new game, with a lot of technical methods to implement, in order to minimise risk
+							the <b>Top-down engine asset by More Mountains</b> is being used as the core in the project.
+							Having been developed for years, with good documentation - it is the perfect based to start
+							developing a top-down game.
+							I will then add additional fucntionality on top of it using custom scripts.
+							<br><br>
+							A lot of the core concepts need to be carefully analysed so it doesn't look like a legend of
+							zelda clone.
+							This is crucial in order for Peblo to stand out in the market.
+					</section>
+					<!--//section-->
 				</article>
 				<article class="docs-article" id="section-3">
 					<section class="docs-section" id="item-2-3">
-						<h2 class="section-heading">Description</h2>	
+						<h2 class="section-heading">Description</h2>
 						<p>
-						Peblo places the player in an pitch black world, with no direction and no questions to answer to start with.
-						<br><br>
-						Small visual clues, will guide the player throughout. But, it's essential for the player to feel
-						that Peblo is growing as they play. For this reason, peblo will start with <b>none of the 5 senses</b> and
-						slowly grow, as the player unravels their fate and answers questions of who they're. 
-						<br><br>
-						The idea is to grow from an empty husk, to an being with emotion, whilst the choices they make
-						on this path, <b>affect fate itself</b>.
+							Peblo places the player in an pitch black world, with no direction and no questions to
+							answer to start with.
+							<br><br>
+							Small visual clues, will guide the player throughout. But, it's essential for the player to
+							feel
+							that Peblo is growing as they play. For this reason, peblo will start with <b>none of the 5
+								senses</b> and
+							slowly grow, as the player unravels their fate and answers questions of who they're.
+							<br><br>
+							The idea is to grow from an empty husk, to an being with emotion, whilst the choices they
+							make
+							on this path, <b>affect fate itself</b>.
 						</p>
-					</section><!--//section-->
+						<div class="text-center">
+							<a href="assets/images/huddled.jpeg"><img class="figure-img img-fluid"
+									src="assets/images/The-Five-Senses-In-Arabic.jpg" alt=""
+									title="https://huddled.co.uk/2018/09/why-the-lake-district-is-the-place-to-visit-this-autumn/" /></a>
+						</div>
+						<!--//col-->
+						<div class="alert alert-dark" role="alert">
+							This is a dark alert—check it out!
+						</div>
+					</section>
+					<!--//section-->
 				</article>
 				<article class="docs-article" id="section-4">
 					<section class="docs-section" id="item-2-4">
 						<h2 class="section-heading">Key Features</h2>
 						<p>
-						Peblo will allow the player to explore a fragmented world, helping change his fate and others. 
-						They will be allowed to freely roam the world, albeit with some barriers in place in order to place the game.
-						<br><br>
-						From an empty shell, to a full vessel, the player starts out with nothing. 
-						The idea is too show the player that Peblo has <b>just been born, rather then imply it.</b>
-						This is crucial for the player to feel like he's interacting with the world.
-						<br><br>
-						I really want the Peblo world to feel rich and alive, its a perfect contrast to something which is so empty to start with.
-						In order to achieve this, I want to <b>use physics</b> to make every second in the game feel impactful.
-						From Dynamic Water, to vivid vegetation and players interaction with the environment. It should feel special.
-						<br><br>
-						A dynamic story will allow for replayability. Each character has several fates, some fixed, some changeable.
-						This leads to different endings and character progressions.
-						<br><br>
-						Peblo will have two difficulties. This is to ensure, extra challenges to veteran gamers, whilst newer gamers
-						can pick up the game with ease.
+							Peblo will allow the player to explore a fragmented world, helping change his fate and
+							others.
+							They will be allowed to freely roam the world, albeit with some barriers in place in order
+							to place the game.
+							<br><br>
+							From an empty shell, to a full vessel, the player starts out with nothing.
+							The idea is too show the player that Peblo has <b>just been born, rather then imply it.</b>
+							This is crucial for the player to feel like he's interacting with the world.
+							<br><br>
+							I really want the Peblo world to feel rich and alive, its a perfect contrast to something
+							which is so empty to start with.
+							In order to achieve this, I want to <b>use physics</b> to make every second in the game feel
+							impactful.
+							From Dynamic Water, to vivid vegetation and players interaction with the environment. It
+							should feel special.
+							<br><br>
+							A dynamic story will allow for replayability. Each character has several fates, some fixed,
+							some changeable.
+							This leads to different endings and character progressions.
+							<br><br>
+							Peblo will have two difficulties. This is to ensure, extra challenges to veteran gamers,
+							whilst newer gamers
+							can pick up the game with ease.
 						</p>
 						<br>
-					</section><!--//section-->
+					</section>
+					<!--//section-->
 				</article>
 				<article class="docs-article" id="section-5">
 					<section class="docs-section" id="item-2-5">
 						<h2 class="section-heading">Genre</h2>
 						<p>
-						Peblo is a <b>Top-down action-adventure game.</b> with a branching decision-based story.
-						</p>			
-					</section><!--//section-->
+							Peblo is a <b>Top-down action-adventure game</b> with a branching decision-based story.
+						</p>
+					</section>
+					<!--//section-->
 				</article>
 				<article class="docs-article" id="section-6">
 					<section class="docs-section" id="item-2-6">
 						<h2 class="section-heading">Platform</h2>
 						<p>
-						The targeted platform is the <b>PC</b>, but being built with performance in mind so that it <b>can be run on a nintendo switch.</b>
-						I want the nintendo switch to be the primary platform in the future.
+							The targeted platform is the <b>PC</b>, but being built with performance in mind so that it
+							<b>can be run on a nintendo switch.</b>
+							I want the nintendo switch to be the primary platform in the future.
 						</p>
-					</section><!--//section-->
+					</section>
+					<!--//section-->
 				</article>
 				<article class="docs-article" id="section-7">
 					<section class="docs-section" id="item-2-7">
 						<h2 class="section-heading">Concept Art</h2>
 						<div class="">
-									<a href="assets/images/concept art.jpeg"><img class="figure-img img-fluid shadow rounded" src="assets/images/concept art.png" alt="" title="https://huddled.co.uk/2018/09/why-the-lake-district-is-the-place-to-visit-this-autumn/"/></a>
-						</div><!--//col-->
+							<a href="assets/images/concept art.jpeg"><img class="figure-img img-fluid shadow rounded"
+									src="assets/images/concept art.png" alt=""
+									title="https://huddled.co.uk/2018/09/why-the-lake-district-is-the-place-to-visit-this-autumn/" /></a>
+						</div>
+						<!--//col-->
 						<div class="alert alert-dark" role="alert">
-						  This is a dark alert—check it out!
+							This is a dark alert—check it out!
 						</div>
 						<br>
 						<div class="">
-									<a href="assets/images/concept art.png"><img class="figure-img img-fluid shadow rounded" src="assets/images/conceptart2.png" alt="" title="https://huddled.co.uk/2018/09/why-the-lake-district-is-the-place-to-visit-this-autumn/"/></a>
-						</div><!--//col-->
+							<a href="assets/images/concept art.png"><img class="figure-img img-fluid shadow rounded"
+									src="assets/images/conceptart2.png" alt=""
+									title="https://huddled.co.uk/2018/09/why-the-lake-district-is-the-place-to-visit-this-autumn/" /></a>
+						</div>
+						<!--//col-->
 						<div class="alert alert-dark" role="alert">
-						  This is a dark alert—check it out!
+							This is a dark alert—check it out!
 						</div>
 						<br>
 						<div class="">
-									<a href="assets/images/huddled.jpeg"><img class="figure-img img-fluid shadow rounded" src="assets/images/LANS_Koholint_Island_Render.png" alt="" title="https://huddled.co.uk/2018/09/why-the-lake-district-is-the-place-to-visit-this-autumn/"/></a>
-						</div><!--//col-->
-						<div class="alert alert-dark" role="alert">
-						  This is a dark alert—check it out!
+							<a href="assets/images/huddled.jpeg"><img class="figure-img img-fluid shadow rounded"
+									src="assets/images/LANS_Koholint_Island_Render.png" alt=""
+									title="https://huddled.co.uk/2018/09/why-the-lake-district-is-the-place-to-visit-this-autumn/" /></a>
 						</div>
-					</section><!--//section-->
-			    </article><!--//docs-article-->
-			    <footer class="footer">
+						<!--//col-->
+						<div class="alert alert-dark" role="alert">
+							This is a dark alert—check it out!
+						</div>
+						<div class="">
+							<a href="assets/images/huddled.jpeg"><img class="figure-img img-fluid shadow rounded"
+									src="assets/images/castlegate.jpeg" alt=""
+									title="https://huddled.co.uk/2018/09/why-the-lake-district-is-the-place-to-visit-this-autumn/" /></a>
+						</div>
+						<!--//col-->
+						<div class="alert alert-dark" role="alert">
+							This is a dark alert—check it out!
+						</div>
+					</section>
+					<!--//section-->
+				</article>
+				<!--//docs-article-->
+				<footer class="footer">
 					<div class="progress my-4">
-						<div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+						<div class="progress-bar bg-success" role="progressbar" style="width: 20%" aria-valuenow="20"
+							aria-valuemin="0" aria-valuemax="100"></div>
 					</div>
 					<ul class="pagination pagination-lg justify-content-center flex-wrap">
 						<li class="page-item"><a class="page-link" href="preface.html#section-1">Previous</a></li>
@@ -211,36 +301,39 @@
 						<li class="page-item"><a class="page-link" href="bibliography.html#section-1">10</a></li>
 						<li class="page-item"><a class="page-link" href="gamemechanics.html#section-1">Next</a></li>
 					</ul>
-				    <div class="container text-center py-5">
-				        <small class="copyright">Template Copyright &copy; <a href="https://themes.3rdwavemedia.com/" target="_blank">3rd Wave Media</a></small>
-				        <ul class="social-list list-unstyled pt-4 mb-0">
-						    <li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li> 
-				            <li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
-				            <li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
-				            <li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
-				            <li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li>
-				            <li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li>
-				        </ul><!--//social-list-->
-				    </div>
-			    </footer>
-		    </div> 
-	    </div>
-    </div><!--//docs-wrapper-->
-   
-       
-    <!-- Javascript -->          
-    <script src="assets/plugins/popper.min.js"></script>
-    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
-    
-    
-    <!-- Page Specific JS -->
-    <script src="assets/plugins/smoothscroll.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
-    <script src="assets/js/highlight-custom.js"></script> 
-    <script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>      
-    <script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script> 
-    <script src="assets/js/docs.js"></script> 
+					<div class="container text-center py-5">
+						<small class="copyright">Template Copyright &copy; <a href="https://themes.3rdwavemedia.com/"
+								target="_blank">3rd Wave Media</a></small>
+						<ul class="social-list list-unstyled pt-4 mb-0">
+							<li class="list-inline-item"><a href="#"><i class="fab fa-github fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="fab fa-twitter fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="fab fa-slack fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="fab fa-product-hunt fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="fab fa-instagram fa-fw"></i></a></li>
+						</ul>
+						<!--//social-list-->
+					</div>
+				</footer>
+			</div>
+		</div>
+	</div>
+	<!--//docs-wrapper-->
+
+
+	<!-- Javascript -->
+	<script src="assets/plugins/popper.min.js"></script>
+	<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+
+	<!-- Page Specific JS -->
+	<script src="assets/plugins/smoothscroll.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+	<script src="assets/js/highlight-custom.js"></script>
+	<script src="assets/plugins/simplelightbox/simple-lightbox.min.js"></script>
+	<script src="assets/plugins/gumshoe/gumshoe.polyfills.min.js"></script>
+	<script src="assets/js/docs.js"></script>
 
 </body>
-</html> 
 
+</html>
